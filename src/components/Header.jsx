@@ -16,11 +16,6 @@ class Header extends Component {
         >
           <Container>
             <Navbar.Brand href="#home">Home</Navbar.Brand>
-            <Form.Control
-              type="text"
-              placeholder="Search"
-              className="search-input"
-            />
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
@@ -29,7 +24,12 @@ class Header extends Component {
                 <Nav.Link href="#">Recently Added</Nav.Link>
                 <Nav.Link href="#">My List</Nav.Link>
               </Nav>
-              <Nav className="ms-auto">
+              <Form.Control
+                type="text"
+                placeholder="Search"
+                className="search-input mx-3"
+              />
+              <Nav>
                 <Nav.Link href="#">KIDS</Nav.Link>
                 <Nav.Link href="#">🔔</Nav.Link>
                 <Nav.Link href="#">👤</Nav.Link>

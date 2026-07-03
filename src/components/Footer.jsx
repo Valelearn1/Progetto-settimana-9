@@ -7,7 +7,12 @@ const columns = [
   ["Gift Cards", "Terms of Use", "Corporate Information"],
 ];
 
-const socials = ["Facebook", "Instagram", "Twitter", "YouTube"];
+const socials = [
+  { name: "Facebook", icon: "bi-facebook" },
+  { name: "Instagram", icon: "bi-instagram" },
+  { name: "Twitter", icon: "bi-twitter" },
+  { name: "YouTube", icon: "bi-youtube" },
+];
 
 class Footer extends Component {
   render() {
@@ -15,8 +20,8 @@ class Footer extends Component {
       <footer className="app-footer">
         <div className="footer-socials">
           {socials.map((social, index) => (
-            <a href="#" key={index} aria-label={social}>
-              {social[0]}
+            <a href="#" key={index} aria-label={social.name}>
+              <i className={`bi ${social.icon}`}></i>
             </a>
           ))}
         </div>
