@@ -186,7 +186,7 @@ class Cards extends Component {
             <Modal.Title>{this.state.selectedMovie?.Title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h6>Recensioni</h6>
+            <h6>Reviews</h6>
             {this.state.commentsLoading && <p>Reviews loading...</p>}
             {!this.state.commentsLoading &&
               this.state.comments.length === 0 && (
@@ -202,7 +202,7 @@ class Cards extends Component {
 
             <hr />
 
-            <h6>Aggiungi una recensione</h6>
+            <h6>Add a review</h6>
             {this.state.commentError && (
               <p className="cards-error">{this.state.commentError}</p>
             )}
