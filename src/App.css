@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(37, 37, 37);
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.search-input {
+  background-color: rgb(80, 80, 80);
+  color: white;
+  font-style: italic;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 12px;
+  width: 140px;
+  flex: 0 0 auto;
+}
+
+.search-input::placeholder {
+  color: rgb(210, 210, 210);
+}
+
+.navbar-nav {
+  margin-top: 8px;
+}
+
+.nav-link {
+  padding: 10px 16px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.05rem;
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 600;
+}
