@@ -20,7 +20,13 @@ class Cards extends Component {
     const movieCards = this.state.movies.map((movie, index) => {
       return (
         <div key={index}>
-          <img src={movie.Poster} alt={movie.Title} />
+          <img
+            src={movie.Poster}
+            alt={movie.Title}
+            onError={(e) =>
+              (e.target.src = "https://placehold.co/300x445?text=No+Poster")
+            }
+          />
         </div>
       );
     });
