@@ -63,11 +63,45 @@ header {
   margin-bottom: 12px;
 }
 
+.row-scroll-wrapper {
+  position: relative;
+}
+
 .row-scroll {
   display: flex;
   gap: 10px;
   overflow-x: auto;
   padding-bottom: 8px;
+}
+
+.scroll-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 8px;
+  width: 40px;
+  border: none;
+  background: rgba(20, 20, 20, 0.6);
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.row-scroll-wrapper:hover .scroll-arrow {
+  opacity: 1;
+}
+
+.scroll-arrow-left {
+  left: 0;
+}
+
+.scroll-arrow-right {
+  right: 0;
 }
 
 .movie-card {
@@ -91,6 +125,27 @@ header {
 .cards-error {
   color: white;
   padding: 24px 40px;
+}
+
+.star-rating {
+  display: flex;
+  gap: 6px;
+  font-size: 1.5rem;
+}
+
+.star-rating i {
+  cursor: pointer;
+  color: #f5c518;
+}
+
+.star-rating-sm {
+  display: inline-flex;
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.star-rating-sm i {
+  cursor: default;
 }
 
 .app-footer {
