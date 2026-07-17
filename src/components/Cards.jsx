@@ -1,9 +1,10 @@
 import { Component } from "react";
 import { Modal, Spinner, Form, Button } from "react-bootstrap";
 
-const OMDB_API_KEY = import.meta.env.VITE_OMDB_API_KEY;
+const OMDB_API_KEY = "24ad60e9";
 const COMMENTS_API_URL = "https://striveschool-api.herokuapp.com/api/comments";
-const COMMENTS_TOKEN = import.meta.env.VITE_COMMENTS_TOKEN;
+const COMMENTS_TOKEN =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTQ2NTNlY2E0NjE0NDAwMTVlMDVjZjMiLCJpYXQiOjE3ODI5OTM5MDAsImV4cCI6MTc4NDIwMzUwMH0.BfZqaFoCGBdXZSZRNKmGHKCm2T8TxxdiDYjh6rzXXb8";
 
 class Cards extends Component {
   constructor(props) {
